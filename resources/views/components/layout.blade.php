@@ -18,9 +18,9 @@
 
     
     <nav class="bottom-nav">
-        <button>Match</button>
-        <button>Home</button>
-        <button>Discover</button>
+        <a href="/match">Match</a>
+        <a href="/">Home</a>
+        <a href="/discover">Discover</a>
     </nav>
 
 </body>

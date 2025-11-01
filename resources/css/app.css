@@ -57,6 +57,21 @@ button {
     border-top: 1px solid #e5e7eb;
 }
 
+.bottom-nav a {
+    background: #644536;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bottom-nav a:hover {
+    background: #7a5643;
+}
+
 .menu-button {
     margin-left: auto;
 }

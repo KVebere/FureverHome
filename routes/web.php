@@ -14,3 +14,6 @@ Route::get('/match', function () {
     return view('match');
 });
 
+Route::get('/discover', function () {
+    return view('discover');
+});
