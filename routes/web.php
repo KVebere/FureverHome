@@ -1,10 +1,13 @@
 <?php
 
 use App\Models\shelters;
+use App\Models\Animals;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'animals' => Animals::all()
+    ]);
 });
 
 Route::get('/test', function () {
@@ -12,3 +15,4 @@ Route::get('/test', function () {
         'shelters' => Shelters::all()
     ]);
 });
+
