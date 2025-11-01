@@ -6,13 +6,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        'animals' => Animals::all()
+        'animals' => Animals::latest()->take(3)->get()
     ]);
 });
 
-Route::get('/test', function () {
-    return view('test', [
-        'shelters' => Shelters::all()
-    ]);
+Route::get('/match', function () {
+    return view('match');
 });
 
