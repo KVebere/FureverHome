@@ -43,7 +43,7 @@
             </ul>
         </section>
         <section>
-            <h2>Recomended for you</h2>
+            <h2>Recommended for you</h2>
         </section>
     </main>
 </x-layout>
