@@ -9,24 +9,62 @@ class AnimalImageSeeder extends Seeder
 {
     public function run(): void
     {
-        $buddyId = DB::table('animals')->where('animal_name', 'Buddy')->first()->animal_id;
-        $mistyId = DB::table('animals')->where('animal_name', 'Misty')->first()->animal_id;
+        $animals = DB::table('animals')->get()->keyBy('animal_name');
 
         DB::table('animal_images')->insert([
+            // Buddy
             [
-                'animal_id' => $buddyId,
-                'image_path' => 'animals/buddy.jpg',
+                'animal_id' => $animals['Buddy']->animal_id,
+                'image_path' => 'animals/buddy_1.jpg',
                 'is_primary' => true,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+
+            // Misty
             [
-                'animal_id' => $mistyId,
-                'image_path' => 'animals/misty.png',
+                'animal_id' => $animals['Misty']->animal_id,
+                'image_path' => 'animals/misty_1.png',
                 'is_primary' => true,
                 'created_at' => now(),
                 'updated_at' => now(),
-            ]
+            ],
+
+            // Sparkspot
+            [
+                'animal_id' => $animals['Sparkspot']->animal_id,
+                'image_path' => 'animals/sparkspot_1.jpg',
+                'is_primary' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            // Rasa
+            [
+                'animal_id' => $animals['Rasa']->animal_id,
+                'image_path' => 'animals/rasa_1.jpg',
+                'is_primary' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            // Nairn
+            [
+                'animal_id' => $animals['Nairn']->animal_id,
+                'image_path' => 'animals/nairn_1.jpg',
+                'is_primary' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            // Jude
+            [
+                'animal_id' => $animals['Jude']->animal_id,
+                'image_path' => 'animals/jude_1.jpg',
+                'is_primary' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }
