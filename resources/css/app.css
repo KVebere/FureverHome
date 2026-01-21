@@ -3,7 +3,7 @@
 body {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     background: #eef1bd;
-    padding-bottom: 4rem; 
+    padding-bottom: 4rem;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 }
 
 main {
-    padding: 2rem 1rem;
+
 }
 
 h2 {
@@ -24,7 +24,7 @@ h2 {
 
 section {
     color: #644536;
-    padding: 1.5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
 }
@@ -43,10 +43,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.75rem; 
-    padding: 0.5rem 1rem; 
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
     background: #c4a381;
-    border-bottom: 1px solid #e5e7eb; 
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .bottom-nav {
@@ -74,4 +74,48 @@ button {
 
 .menu-button {
     margin-left: auto;
+}
+
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4-column grid */
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 640px) {
+    .animal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .animal-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.animal-card {
+    position: relative;
+}
+
+.animal-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    color: #333;
+    padding: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.animal-card:hover .overlay {
+    opacity: 1;
 }
