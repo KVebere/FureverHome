@@ -12,6 +12,12 @@ return new class extends Migration
      */
     public function up(): void
     {
+        DB::statement('DROP TYPE IF EXISTS animal_status;');
+        DB::statement('DROP TYPE IF EXISTS species;');
+        DB::statement('DROP TYPE IF EXISTS gender;');
+        DB::statement('DROP TYPE IF EXISTS home_type;');
+        DB::statement('DROP TYPE IF EXISTS activity_level;');
+
         DB::statement("CREATE TYPE animal_status AS ENUM ('Available', 'Adopted', 'Pending', 'Fostered');");
         DB::statement("CREATE TYPE species AS ENUM ('Dog', 'Cat', 'Other');");
         DB::statement("CREATE TYPE gender AS ENUM ('Male', 'Female', 'Unknown');");
@@ -52,10 +58,5 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('animals');
-        DB::statement('DROP TYPE IF EXISTS animal_status;');
-        DB::statement('DROP TYPE IF EXISTS species;');
-        DB::statement('DROP TYPE IF EXISTS gender;');
-        DB::statement('DROP TYPE IF EXISTS home_type;');
-        DB::statement('DROP TYPE IF EXISTS activity_level;');
     }
 };

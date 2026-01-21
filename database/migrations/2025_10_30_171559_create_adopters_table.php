@@ -12,6 +12,9 @@ return new class extends Migration
      */
     public function up(): void
     {
+        DB::statement('DROP TYPE IF EXISTS experience_level;');
+        DB::statement('DROP TYPE IF EXISTS work_schedule;');
+
         DB::statement("CREATE TYPE experience_level AS ENUM ('None', 'Semi-Experienced', 'Experienced', 'Advanced Experience');");
         DB::statement("CREATE TYPE work_schedule AS ENUM ('Home Full-Time', 'Home Part-Time', 'Away Full-Time', 'Away Part-Time');");
 
@@ -45,7 +48,5 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('adopters');
-        DB::statement('DROP TYPE IF EXISTS experience_level;');
-        DB::statement('DROP TYPE IF EXISTS work_schedule;');
     }
 };

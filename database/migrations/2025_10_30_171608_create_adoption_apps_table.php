@@ -12,6 +12,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        DB::statement('DROP TYPE IF EXISTS app_status;');
 
         DB::statement("CREATE TYPE app_status AS ENUM ('Pending', 'Approved', 'Rejected');");
 
@@ -40,6 +41,5 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('adoption_apps');
-        DB::statement('DROP TYPE IF EXISTS app_status;');
     }
 };
