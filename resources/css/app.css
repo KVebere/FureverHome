@@ -120,34 +120,50 @@ button {
     opacity: 1;
 }
 
-.swiper {
+.card-stack {
+    position: relative;
     width: 320px;
     height: 420px;
     margin: auto;
 }
 
-.swiper-slide {
-    border-radius: 16px;
+.card {
+    position: absolute;
+    inset: 0;
     background: white;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
     overflow: hidden;
-    transition: transform 0.25s ease-out;
+    cursor: grab;
+    touch-action: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.swiper-slide figure {
+.card figure {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.swiper-slide img {
+.card img {
     width: 100%;
     height: 75%;
     object-fit: cover;
 }
 
-.swiper-slide figcaption {
+.card figcaption {
     padding: 1rem;
     background: white;
     flex-grow: 1;
 }
+
+/* stack depth */
+.card:nth-child(2) {
+    transform: scale(0.96) translateY(8px);
+}
+
+.card:nth-child(3) {
+    transform: scale(0.92) translateY(16px);
+}
+
 
