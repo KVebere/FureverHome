@@ -24,11 +24,11 @@ function initCards() {
     topCard.addEventListener('pointermove', e => {
         if (!dragging) return;
 
-        currentX = e.clientX - startX;
+        currentX += (e.clientX - startX - currentX) * 0.25;
         const rotate = currentX * 0.05;
 
         topCard.style.transform =
-            `translateX(${currentX}px) rotate(${rotate}deg)`;
+            `translateX(${currentX}px, 0, 0) rotate(${rotate}deg)`;
     });
 
     topCard.addEventListener('pointerup', () => {
