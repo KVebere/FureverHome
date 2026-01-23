@@ -16,7 +16,7 @@
             <h2>New Additions</h2>
 
             <ul class="animal-grid">
-                @foreach($animals->take(4) as $animal)
+                @foreach($animals as $animal)
                     <li class="animal-card group">
                         <a href="{{ route('animals.show', $animal->animal_id) }}">
                             <figure class="relative">
