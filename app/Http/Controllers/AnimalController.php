@@ -10,10 +10,17 @@ class AnimalController extends Controller
     // Show a single animal profile
     public function show($id)
     {
-        // Fetch the animal with its primary image
         $animal = Animals::with('primaryImage')->findOrFail($id);
 
-        // Return the view and pass the animal data
         return view('animals.show', compact('animal'));
+    }
+    public function match()
+    {
+        $animals = Animals::with('primaryImage')
+            ->where('animal_status', 'Available')
+            ->latest()
+            ->get();
+
+        return view('match', compact('animals'));
     }
 }

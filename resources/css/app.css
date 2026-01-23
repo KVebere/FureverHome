@@ -119,3 +119,35 @@ button {
 .animal-card:hover .overlay {
     opacity: 1;
 }
+
+.swiper {
+    width: 320px;
+    height: 420px;
+    margin: auto;
+}
+
+.swiper-slide {
+    border-radius: 16px;
+    background: white;
+    overflow: hidden;
+    transition: transform 0.25s ease-out;
+}
+
+.swiper-slide figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.swiper-slide figcaption {
+    padding: 1rem;
+    background: white;
+    flex-grow: 1;
+}
+

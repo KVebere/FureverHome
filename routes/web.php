@@ -8,7 +8,8 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/match', fn () => view('match'));
+Route::get('/match', [AnimalController::class, 'match']);
+
 Route::get('/discover', fn () => view('discover'));
 
 Route::get('/animals/{animal}', [AnimalController::class, 'show'])
