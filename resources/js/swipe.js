@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         topCard.addEventListener('pointerup', () => {
             dragging = false;
             const threshold = 100;
-            const liked = currentX > 0; // right swipe = like
+            const liked = currentX > 0;
 
             if (Math.abs(currentX) > threshold) {
                 console.log(liked ? 'LIKE ❤️' : 'DISLIKE ❌', topCard.dataset.id);
@@ -51,16 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 setTimeout(() => {
                     topCard.remove();
-                    updateCardStack(); // animate remaining cards smoothly
-                    initCards(); // re-init top card
+                    updateCardStack();
+                    initCards();
                 }, 400);
             } else {
                 topCard.style.transition = 'transform 0.3s ease';
-                topCard.style.transform = `scale(1) translateY(0px)`; // snap back
+                topCard.style.transform = `scale(1) translateY(0px)`;
             }
         });
     }
 
-    updateCardStack(); // initial stack positions
+    updateCardStack();
     initCards();
 });
