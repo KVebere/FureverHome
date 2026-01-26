@@ -147,10 +147,10 @@ button {
 /*Animal matching Content*/
 
 .match-page {
-    min-height: calc(100dvh - 8rem); /* top + bottom nav */
+    min-height: calc(100dvh - 8rem);
     display: grid;
     place-items: center;
-    padding-bottom: 4rem; /* nav height safety */
+    padding-bottom: 4rem;
 }
 
 .animal-card {
