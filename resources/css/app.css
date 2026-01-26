@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/*Main Content*/
 body {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     background: #eef1bd;
@@ -72,19 +73,20 @@ button {
     background: #7a5643;
 }
 
+/*Side Navigation Content*/
+
 .menu-button,
 #menuToggle {
     margin-left: auto;
 }
 
-
 .side-nav {
     position: fixed;
     top: 0;
-    right: 0; /* 👈 RIGHT SIDE */
+    right: 0;
     height: 100dvh;
     width: 260px;
-    background: #c4a381; /* same as nav */
+    background: #c4a381;
     padding: 1.5rem 1rem;
 
     display: flex;
@@ -96,7 +98,6 @@ button {
     z-index: 50;
 }
 
-/* backdrop using pseudo-element */
 .side-nav::before {
     content: "";
     position: fixed;
@@ -117,9 +118,10 @@ button {
     pointer-events: auto;
 }
 
+/*Home Content*/
 .animal-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4-column grid */
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     list-style: none;
     padding: 0;
@@ -137,6 +139,7 @@ button {
     }
 }
 
+/*Animal matching Content*/
 
 .animal-card {
     position: relative;
@@ -147,7 +150,7 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    background: rgba(255, 255, 255, 0.8);
     color: #333;
     padding: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -198,8 +201,6 @@ button {
     background: white;
     flex-grow: 1;
 }
-
-/* stack depth */
 .card:nth-child(2) {
     transform: scale(0.96) translateY(8px);
 }
