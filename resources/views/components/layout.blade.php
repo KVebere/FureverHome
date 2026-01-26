@@ -10,9 +10,21 @@
 <body>
 
     <nav class="top-nav">
-        <!-- <a href="/"><img src="/images/logo.png" alt="FureverHome Logo"></a> -->
-        <button class="menu-button">Menu</button>
+        <button id="menuToggle"
+                aria-controls="sideNav"
+                aria-expanded="false">
+            ☰ Menu
+        </button>
     </nav>
+
+    <aside class="side-nav" id="sideNav" aria-hidden="true">
+        <button class="close-btn" aria-label="Close menu">✕</button>
+
+        <a href="/profile">Profile</a>
+        <a href="/savedMatches">Saved Matches</a>
+        <a href="/settings">Settings</a>
+    </aside>
+
 
     <?php echo $slot; ?>
 
