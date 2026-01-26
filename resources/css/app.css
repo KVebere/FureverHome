@@ -80,6 +80,10 @@ button {
     margin-left: auto;
 }
 
+.side-href {
+    color: white;
+}
+
 .side-nav {
     position: fixed;
     top: 0;
