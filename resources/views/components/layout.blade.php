@@ -20,7 +20,7 @@
     <aside class="side-nav" id="sideNav" aria-hidden="true">
         <button class="close-btn" aria-label="Close menu">✕</button>
 
-        <a class = "side-href" href="/profile">Profile</a>
+        <a class = "side-href" href="/userProfile">Profile</a>
         <a class = "side-href" href="/savedMatches">Saved Matches</a>
         <a class = "side-href" href="/settings">Settings</a>
     </aside>
