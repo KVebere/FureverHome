@@ -56,6 +56,7 @@ button {
     right: 0;
     bottom: 0;
     border-top: 1px solid #e5e7eb;
+    z-index: 100;
 }
 
 .bottom-nav a {
@@ -145,6 +146,13 @@ button {
 
 /*Animal matching Content*/
 
+.match-page {
+    min-height: calc(100dvh - 8rem); /* top + bottom nav */
+    display: grid;
+    place-items: center;
+    padding-bottom: 4rem; /* nav height safety */
+}
+
 .animal-card {
     position: relative;
 }
@@ -172,6 +180,7 @@ button {
     width: 320px;
     height: 420px;
     margin: auto;
+    z-index: 1;
 }
 
 .card {
