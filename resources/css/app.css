@@ -215,4 +215,58 @@ button {
     flex-grow: 1;
 }
 
+/* Profile page */
+
+.profile {
+    text-align: center;
+}
+
+.profile-title {
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.profile-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1.25rem;
+}
+
+/* summary list under name */
+.profile-summary {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    text-align: left;
+}
+
+.profile-summary li {
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* form polish */
+.profile form {
+    display: grid;
+    gap: 0.75rem;
+    text-align: left;
+}
+
+.profile label {
+    display: grid;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.profile input,
+.profile select {
+    padding: 0.4rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
 
