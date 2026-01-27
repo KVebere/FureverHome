@@ -12,9 +12,6 @@ return new class extends Migration
      */
     public function up(): void
     {
-        DB::statement('DROP TYPE IF EXISTS app_status;');
-
-        DB::statement("CREATE TYPE app_status AS ENUM ('Pending', 'Approved', 'Rejected');");
 
         Schema::create('adoption_apps', function (Blueprint $table) {
             $table->id('adoption_app_id');
