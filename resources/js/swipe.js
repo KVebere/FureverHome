@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const stack = document.querySelector('#cardStack');
     if (!stack) return;
+    const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+
+    function saveMatch(animalId) {
+        if (!csrfToken) return;
+        fetch('/saved-matches', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-CSRF-TOKEN': csrfToken,
+            },
+            body: JSON.stringify({ animal_id: animalId }),
+        }).catch(() => {});
+    }
 
     function updateCardStack() {
         const cards = Array.from(stack.querySelectorAll('.card'));
@@ -44,6 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (Math.abs(currentX) > threshold) {
                 console.log(liked ? 'LIKE ❤️' : 'DISLIKE ❌', topCard.dataset.id);
+                if (liked) {
+                    saveMatch(topCard.dataset.id);
+                }
 
                 topCard.style.transition = 'transform 0.4s ease-out, opacity 0.4s ease-out';
                 topCard.style.transform = `translateX(${liked ? 1000 : -1000}px) rotate(${currentX * 0.1}deg)`;

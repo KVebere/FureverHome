@@ -270,3 +270,64 @@ button {
     border: 1px solid #ccc;
 }
 
+/* Animal show page */
+.animal-profile {
+    text-align: left;
+    background: #f7f1e1;
+    border: 1px solid #d7c1a7;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 8px 18px rgba(100, 69, 54, 0.12);
+}
+
+.animal-profile .profile-name {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 1.4rem;
+}
+
+.animal-hero {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1rem;
+}
+
+.animal-hero img {
+    width: min(100%, 520px);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    border: 2px solid #c4a381;
+    box-shadow: 0 6px 16px rgba(100, 69, 54, 0.18);
+}
+
+.animal-profile .profile-summary {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.animal-profile .profile-summary li {
+    background: #fff6e7;
+    border-bottom: 1px solid rgba(100, 69, 54, 0.15);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.animal-profile section {
+    background: #fff;
+    border: 1px solid #ead9c2;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.animal-profile h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+    color: #644536;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}

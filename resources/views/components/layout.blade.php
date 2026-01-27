@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>FureverHome</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -31,7 +32,7 @@
 
     <nav class="bottom-nav">
         <a href="/match">Match</a>
-        <a href="/">Home</a>
+        <a href="/home">Home</a>
         <a href="/discover">Discover</a>
     </nav>
 
