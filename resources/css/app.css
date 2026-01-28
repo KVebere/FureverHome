@@ -48,6 +48,7 @@ button {
     padding: 0.5rem 1rem;
     background: #c4a381;
     border-bottom: 1px solid #e5e7eb;
+    min-height: 4rem;
 }
 
 .bottom-nav {

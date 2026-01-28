@@ -1,4 +1,4 @@
-<x-layout>
+<x-intro>
     <header>
         <h1>Create account</h1>
     </header>
@@ -41,4 +41,4 @@
             </p>
         </section>
     </main>
-</x-layout>
+</x-intro>

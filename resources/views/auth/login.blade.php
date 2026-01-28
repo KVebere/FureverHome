@@ -1,4 +1,4 @@
-<x-layout>
+<x-intro>
     <header>
         <h1>Sign in</h1>
     </header>
@@ -36,4 +36,4 @@
             </p>
         </section>
     </main>
-</x-layout>
+</x-intro>

@@ -1,4 +1,4 @@
-<x-layout>
+<x-intro>
     <header>
         <h1>Welcome to FureverHome</h1>
     </header>
@@ -20,4 +20,4 @@
 
         </section>
     </main>
-</x-layout>
+</x-intro>
