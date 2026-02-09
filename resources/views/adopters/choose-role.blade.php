@@ -8,15 +8,19 @@
             <h2>Get started</h2>
             <p>Pick your role to create your profile.</p>
 
-            <div class="mt-4">
-                <a href="{{ route('register') }}">
-                    <button type="button">I'm an adopter</button>
-                </a>
-            </div>
+            <nav aria-label="Role selection">
+                <ul>
+                    <li>
+                        <a href="{{ route('register') }}">
+                            <button type="button">I'm an adopter</button>
+                        </a>
+                    </li>
 
-            <div class="mt-3">
-                <button type="button" disabled>I'm a shelter</button>
-            </div>
+                    <li>
+                        <button type="button" disabled>I'm a shelter</button>
+                    </li>
+                </ul>
+            </nav>
 
         </section>
     </main>

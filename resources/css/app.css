@@ -75,6 +75,16 @@ button {
     background: #7a5643;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-top: 1rem;
+}
+
+
 /*Side Navigation Content*/
 
 .menu-button,
