@@ -14,7 +14,7 @@ return new class extends Migration
     {
 
         Schema::create('adoption_apps', function (Blueprint $table) {
-            $table->id('adoption_app_id');
+            $table->id('app_id');
             $table->unsignedBigInteger('animal_id');
             $table->foreign('animal_id')
                 ->references('animal_id')
