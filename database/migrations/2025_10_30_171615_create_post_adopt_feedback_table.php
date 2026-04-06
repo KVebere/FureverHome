@@ -14,9 +14,9 @@ return new class extends Migration
     {
         Schema::create('post_adopt_feedback', function (Blueprint $table) {
             $table->id('feedback_id');
-            $table->unsignedBigInteger('adoption_app_id');
-            $table->foreign('adoption_app_id')
-                ->references('adoption_app_id')
+            $table->unsignedBigInteger('app_id');
+            $table->foreign('app_id')
+                ->references('app_id')
                 ->on('adoption_apps')
                 ->cascadeOnDelete();
             $table->text('feedback_comments');
