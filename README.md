@@ -2,18 +2,7 @@
 
 ## Overview
 
-FureverHome is designed to simplify the animal adoption process by providing a structured platform for both adopters and shelter staff. The system supports browsing, matching, and application workflows while maintaining a clean and responsive user experience.
-
-The application follows a layered architecture and is built using Laravel 12, with modern frontend tooling powered by Vite and Tailwind CSS.
-
-## Features
-
-- User authentication (Adopter & Shelter roles)
-- Animal browsing and filtering
-- Save favourite animals (matching system)
-- Adoption application submission and tracking
-- Shelter management of animal profiles
-- Responsive UI using Tailwind CSS
+FureverHome is designed to simplify the animal adoption process by providing a structured platform for both adopters and shelter staff. Its main functionality is matching pets with potential owners based on both of their traits. It is still WIP and needs improvements.
 
 ## Tools and Technologies
 
@@ -39,10 +28,12 @@ Ensure the following are installed:
 - PostgreSQL
 - Git
 
-
 ## Installation
 
-### 1. Clone the repository
-```bash
+### 1. Clone the repository and navigate to the project folder in your IDE.
+```
 git clone <repository-url>
 cd <project-folder>
+```
+
+
