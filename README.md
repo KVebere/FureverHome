@@ -6,8 +6,6 @@ FureverHome is designed to simplify the animal adoption process by providing a s
 
 The application follows a layered architecture and is built using Laravel 12, with modern frontend tooling powered by Vite and Tailwind CSS.
 
----
-
 ## Features
 
 - User authentication (Adopter & Shelter roles)
@@ -16,8 +14,6 @@ The application follows a layered architecture and is built using Laravel 12, wi
 - Adoption application submission and tracking
 - Shelter management of animal profiles
 - Responsive UI using Tailwind CSS
-
----
 
 ## Tools and Technologies
 
@@ -33,8 +29,6 @@ The application follows a layered architecture and is built using Laravel 12, wi
 | IDE | PhpStorm | Development and debugging |
 | Version Control | Git | Source code management |
 
----
-
 ## Requirements
 
 Ensure the following are installed:
@@ -45,7 +39,6 @@ Ensure the following are installed:
 - PostgreSQL
 - Git
 
----
 
 ## Installation
 
