@@ -30,10 +30,16 @@ Ensure the following are installed:
 
 ## Installation
 
-### 1. Clone the repository and navigate to the project folder in your IDE.
+### 1. Clone the repository and navigate to the project folder in your IDE
 ```
 git clone <repository-url>
 cd <project-folder>
 ```
 
-
+### 2. Install backend and frontend dependencies
+```
+composer install
+```
+```
+npm install
+```
