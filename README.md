@@ -1,7 +1,4 @@
 # FureverHome 🐾
-
-FureverHome is a full-stack web application built with Laravel that connects adopters with shelters, enabling users to browse animals, save matches, and manage adoption applications.
-
 ---
 
 ## Overview
