@@ -19,7 +19,56 @@ FureverHome is designed to simplify the animal adoption process by providing a s
 | Version Control | Git | Source code management |
 
 ## Project Structure 
-text fureverhome/ ├── app/ │ ├── Http/ │ │ └── Controllers/ # Request handling and application flow │ ├── Models/ # Eloquent models │ ├── Providers/ # Application service providers │ └── Services/ # Business logic and helper services ├── bootstrap/ # Framework bootstrap files ├── config/ # Configuration files ├── database/ │ ├── factories/ # Model factories │ ├── migrations/ # Database schema definitions │ └── seeders/ # Sample and initial data ├── public/ # Public entry point and static assets ├── resources/ │ ├── css/ # Stylesheets │ ├── js/ # Frontend JavaScript │ └── views/ # Blade templates ├── routes/ # Web and console routes ├── storage/ # Logs, cache, and uploaded files ├── tests/ # Automated tests ├── artisan # Laravel CLI entry point ├── composer.json # PHP dependencies ├── package.json # JavaScript dependencies ├── phpunit.xml # Test configuration └── vite.config.js # Vite configuration
+```
+app/                        # Core backend application logic
+├── Http/
+│   ├── Controllers/        # Handles requests and application flow
+│   └── Requests/           # Form validation classes
+├── Models/                 # Eloquent models (User, Animal, etc.)
+├── Providers/              # Service providers
+└── Services/               # Business logic (matching, processing)
+
+bootstrap/                  # Framework bootstrap files
+
+config/                     # Application configuration files
+
+database/                   # Database-related files
+├── factories/              # Model factories for testing
+├── migrations/             # Database schema definitions
+└── seeders/                # Initial and sample data
+
+public/                     # Public entry point
+├── index.php               # Application entry point
+└── assets/                 # Compiled frontend assets
+
+resources/                  # Frontend source files
+├── css/                    # Stylesheets (Tailwind)
+│   └── app.css
+├── js/                     # Frontend JavaScript
+│   └── app.js
+└── views/                  # Blade templates
+    ├── auth/               # Login and registration
+    ├── animals/            # Animal-related views
+    ├── profile/            # User profile views
+    ├── components/         # Reusable UI components
+    └── layouts/            # Layout templates
+
+routes/                     # Application routes
+├── web.php                 # Web routes
+└── console.php             # CLI routes
+
+storage/                    # Logs and generated files
+
+tests/                      # Automated tests
+├── Feature/                # Feature tests
+└── Unit/                   # Unit tests
+
+artisan                     # Laravel CLI tool
+composer.json              # PHP dependencies
+package.json               # JavaScript dependencies
+vite.config.js             # Vite configuration
+README.md                  # Project documentation
+```
 
 ## Requirements
 
