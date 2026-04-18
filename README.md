@@ -18,6 +18,9 @@ FureverHome is designed to simplify the animal adoption process by providing a s
 | IDE | PhpStorm | Development and debugging |
 | Version Control | Git | Source code management |
 
+## Project Structure 
+text fureverhome/ ├── app/ │ ├── Http/ │ │ └── Controllers/ # Request handling and application flow │ ├── Models/ # Eloquent models │ ├── Providers/ # Application service providers │ └── Services/ # Business logic and helper services ├── bootstrap/ # Framework bootstrap files ├── config/ # Configuration files ├── database/ │ ├── factories/ # Model factories │ ├── migrations/ # Database schema definitions │ └── seeders/ # Sample and initial data ├── public/ # Public entry point and static assets ├── resources/ │ ├── css/ # Stylesheets │ ├── js/ # Frontend JavaScript │ └── views/ # Blade templates ├── routes/ # Web and console routes ├── storage/ # Logs, cache, and uploaded files ├── tests/ # Automated tests ├── artisan # Laravel CLI entry point ├── composer.json # PHP dependencies ├── package.json # JavaScript dependencies ├── phpunit.xml # Test configuration └── vite.config.js # Vite configuration
+
 ## Requirements
 
 Ensure the following are installed:
