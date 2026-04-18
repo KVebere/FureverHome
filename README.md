@@ -29,8 +29,9 @@ Ensure the following are installed:
 - PostgreSQL
 - Git
 
-## Installation
+> **Note:** Laravel Herd provides a pre-configured environment.
 
+## Installation
 
 1. Clone the repository:
    ```
@@ -50,7 +51,7 @@ Ensure the following are installed:
    npm install
    ```
 
-4. Create the environment file if it does not exist:
+4. CLaravel automatically generates a `.env` file when the project is created. If it is missing, create one:
    ```
    copy .env.example .env
    ```
@@ -80,4 +81,4 @@ Ensure the following are installed:
    npm run dev
    ```
 
-9. Open the project in your browser using Laravel Herd.
+9. Open the project in your browser.
