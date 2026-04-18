@@ -18,58 +18,6 @@ FureverHome is designed to simplify the animal adoption process by providing a s
 | IDE | PhpStorm | Development and debugging |
 | Version Control | Git | Source code management |
 
-## Project Structure 
-```
-app/                        # Core backend application logic
-├── Http/
-│   ├── Controllers/        # Handles requests and application flow
-│   └── Requests/           # Form validation classes
-├── Models/                 # Eloquent models (User, Animal, etc.)
-├── Providers/              # Service providers
-└── Services/               # Business logic (matching, processing)
-
-bootstrap/                  # Framework bootstrap files
-
-config/                     # Application configuration files
-
-database/                   # Database-related files
-├── factories/              # Model factories for testing
-├── migrations/             # Database schema definitions
-└── seeders/                # Initial and sample data
-
-public/                     # Public entry point
-├── index.php               # Application entry point
-└── assets/                 # Compiled frontend assets
-
-resources/                  # Frontend source files
-├── css/                    # Stylesheets (Tailwind)
-│   └── app.css
-├── js/                     # Frontend JavaScript
-│   └── app.js
-└── views/                  # Blade templates
-    ├── auth/               # Login and registration
-    ├── animals/            # Animal-related views
-    ├── profile/            # User profile views
-    ├── components/         # Reusable UI components
-    └── layouts/            # Layout templates
-
-routes/                     # Application routes
-├── web.php                 # Web routes
-└── console.php             # CLI routes
-
-storage/                    # Logs and generated files
-
-tests/                      # Automated tests
-├── Feature/                # Feature tests
-└── Unit/                   # Unit tests
-
-artisan                     # Laravel CLI tool
-composer.json              # PHP dependencies
-package.json               # JavaScript dependencies
-vite.config.js             # Vite configuration
-README.md                  # Project documentation
-```
-
 ## Requirements
 
 Ensure the following are installed:
