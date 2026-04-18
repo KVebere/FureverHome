@@ -29,8 +29,6 @@ Ensure the following are installed:
 - PostgreSQL
 - Git
 
-> **Note:** Laravel Herd provides a pre-configured environment.
-
 ## Installation
 
 1. Clone the repository:
