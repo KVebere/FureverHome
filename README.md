@@ -34,35 +34,35 @@ Ensure the following are installed:
 ## Installation
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone <repository-url>
    ```
-   ```
+   ```bash
    cd <project-folder>
    ```
 
 2. Install PHP dependencies:
-   ```
+   ```bash
    composer install
    ```
 
 3. Install JavaScript dependencies:
-   ```
+   ```bash
    npm install
    ```
 
-4. CLaravel automatically generates a `.env` file when the project is created. If it is missing, create one:
-   ```
+4. Laravel projects usually include a .env.example file. If .env is missing create one:
+   ```env
    copy .env.example .env
    ```
 
 5. Generate the application key:
-   ```
+   ```bash
    php artisan key:generate
    ```
 
 6. Configure your database settings in `.env`:
-   ```
+   ```bash
    DB_CONNECTION=pgsql
    DB_HOST=127.0.0.1
    DB_PORT=5432
@@ -72,12 +72,12 @@ Ensure the following are installed:
    ```
 
 7. Run migrations:
-   ```
+   ```bash
    php artisan migrate
    ```
 
 8. Start the frontend dev server:
-   ```
+   ```bash
    npm run dev
    ```
 
