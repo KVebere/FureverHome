@@ -51,7 +51,7 @@ Ensure the following are installed:
    npm install
    ```
 
-4. Laravel projects usually include a .env.example file. If .env is missing create one:
+4. Laravel projects usually include a `.env.example` file. If `.env` is missing, create one:
    ```env
    copy .env.example .env
    ```
