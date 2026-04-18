@@ -33,6 +33,8 @@ Ensure the following are installed:
 ### 1. Clone the repository and navigate to the project folder in your IDE
 ```
 git clone <repository-url>
+```
+```
 cd <project-folder>
 ```
 
