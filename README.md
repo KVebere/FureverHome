@@ -22,6 +22,7 @@ FureverHome is designed to simplify the animal adoption process by providing a s
 
 Ensure the following are installed:
 
+- Laravel Herd
 - PHP 8.2+
 - Composer
 - Node.js & npm
@@ -30,18 +31,53 @@ Ensure the following are installed:
 
 ## Installation
 
-### 1. Clone the repository and navigate to the project folder in your IDE
-```
-git clone <repository-url>
-```
-```
-cd <project-folder>
-```
 
-### 2. Install backend and frontend dependencies
-```
-composer install
-```
-```
-npm install
-```
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
+   ```
+   cd <project-folder>
+   ```
+
+2. Install PHP dependencies:
+   ```
+   composer install
+   ```
+
+3. Install JavaScript dependencies:
+   ```
+   npm install
+   ```
+
+4. Create the environment file if it does not exist:
+   ```
+   copy .env.example .env
+   ```
+
+5. Generate the application key:
+   ```
+   php artisan key:generate
+   ```
+
+6. Configure your database settings in `.env`:
+   ```
+   DB_CONNECTION=pgsql
+   DB_HOST=127.0.0.1
+   DB_PORT=5432
+   DB_DATABASE=your_database_name
+   DB_USERNAME=your_username
+   DB_PASSWORD=your_password
+   ```
+
+7. Run migrations:
+   ```
+   php artisan migrate
+   ```
+
+8. Start the frontend dev server:
+   ```
+   npm run dev
+   ```
+
+9. Open the project in your browser using Laravel Herd.
