@@ -10,6 +10,7 @@ body {
 header {
     color: #644536;
     font-weight: bolder;
+    font-size: 1.74rem;
     padding: 2rem;
     text-align: center;
 }
@@ -18,14 +19,19 @@ main {
 
 }
 
+.role-main {
+    text-align: center;
+}
+
 h2 {
     font-weight: bold;
-    text-decoration: underline;
+    font-size: 1.60rem;
 }
 
 section {
     color: #644536;
     padding: 1rem;
+    font-size: 1.50rem;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
 }
@@ -73,6 +79,25 @@ button {
 
 .bottom-nav a:hover {
     background: #7a5643;
+}
+
+.role-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.role-buttons button {
+    background: #644536;
+    color: white;
+    font-size: 2.5rem;
+    width: 25rem;
+    height: 8rem;
+    border: none;
+    border-radius: 1rem;
 }
 
 nav ul {

@@ -3,13 +3,13 @@
         <h1>Welcome to FureverHome</h1>
     </header>
 
-    <main>
+    <main class="role-main">
         <section>
             <h2>Get started</h2>
             <p>Pick your role to create your profile.</p>
 
             <nav aria-label="Role selection">
-                <ul>
+                <ul class="role-buttons">
                     <li>
                         <a href="{{ route('register') }}">
                             <button type="button">I'm an adopter</button>
