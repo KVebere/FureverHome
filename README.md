@@ -85,7 +85,7 @@ Start the frontend dev server:
     npm run dev
     ```
     
-    And then in saparate terminal run:
+And then in saparate terminal run:
     ```bash
      php artisan serve
      ```
