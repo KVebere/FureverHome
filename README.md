@@ -78,17 +78,17 @@ Ensure the following are installed:
     composer run dev
     ```
 
-Or
-
+    Or
+    
 Start the frontend dev server:
-   ```bash
-   npm run dev
-   ```
-
-And then in saparate terminal run:
-   ```bash
- php artisan serve
-   ```
+    ```bash
+    npm run dev
+    ```
+    
+    And then in saparate terminal run:
+    ```bash
+     php artisan serve
+     ```
 
 9. And then open it on your local machine and TADA!!!
 
