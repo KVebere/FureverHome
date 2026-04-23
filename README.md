@@ -73,10 +73,23 @@ Ensure the following are installed:
    ```bash
    php artisan migrate
    ```
+8. Composer has been set up to run both Vite and Server by running the command:
+```bash
+composer run dev
+```
 
-8. Start the frontend dev server:
+Or
+
+Start the frontend dev server:
    ```bash
    npm run dev
    ```
 
-9. Open the project in your browser.
+And then in saparate terminal run:
+   ```bash
+ php artisan serve
+   ```
+
+9. And then open it on your local machine and TADA!!!
+
+
