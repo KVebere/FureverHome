@@ -74,9 +74,9 @@ Ensure the following are installed:
    php artisan migrate
    ```
 8. Composer has been set up to run both Vite and Server by running the command:
-```bash
-composer run dev
-```
+    ```bash
+    composer run dev
+    ```
 
 Or
 
