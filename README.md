@@ -87,8 +87,8 @@ Start the frontend dev server:
     
 And then in saparate terminal run:
     ```bash
-     php artisan serve
-     ```
+    php artisan serve
+    ```
 
 9. And then open it on your local machine and TADA!!!
 
