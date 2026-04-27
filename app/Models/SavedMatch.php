@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class SavedMatch extends Model
 {
+    protected $primaryKey = 'saved_matches_id';
+
     protected $fillable = [
         'adopter_id',
         'animal_id',
