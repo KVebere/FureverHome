@@ -6,8 +6,6 @@
     <main class="role-main">
         <section>
             <h2>Get started</h2>
-            <p>Pick your role to create your profile.</p>
-
             <nav aria-label="Role selection">
                 <ul class="role-buttons">
                     <li>
