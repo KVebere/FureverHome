@@ -163,7 +163,7 @@ nav li {
 /*Home Content*/
 .animal-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     list-style: none;
     padding: 0;
@@ -204,11 +204,6 @@ nav li {
     padding: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.animal-card:hover .overlay {
     opacity: 1;
 }
 
