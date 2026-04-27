@@ -3,7 +3,7 @@
         <h1>Create your adopter profile</h1>
     </header>
 
-    <main class="profile">
+    <main class="profile adopter-create">
         <form method="POST" action="{{ route('adopters.store') }}">
             @csrf
 
@@ -20,11 +20,6 @@
             <label>
                 Last name *
                 <input type="text" name="adopter_last_name" value="{{ old('adopter_last_name') }}" required>
-            </label>
-
-            <label>
-                Email *
-                <input type="email" name="adopter_email" value="{{ old('adopter_email') }}" required>
             </label>
 
             <label>
@@ -99,24 +94,24 @@
                 </select>
             </label>
 
-            <label>
-                <input type="checkbox" name="has_children" value="1" @checked(old('has_children'))>
+            <label class="checkbox-label">
                 I have children at home
+                <input type="checkbox" name="has_children" value="1" @checked(old('has_children'))>
             </label>
 
-            <label>
-                <input type="checkbox" name="has_cats" value="1" @checked(old('has_cats'))>
+            <label class="checkbox-label">
                 I have cats at home
+                <input type="checkbox" name="has_cats" value="1" @checked(old('has_cats'))>
             </label>
 
-            <label>
-                <input type="checkbox" name="has_dogs" value="1" @checked(old('has_dogs'))>
+            <label class="checkbox-label">
                 I have dogs at home
+                <input type="checkbox" name="has_dogs" value="1" @checked(old('has_dogs'))>
             </label>
 
-            <label>
-                <input type="checkbox" name="has_other_pets" value="1" @checked(old('has_other_pets'))>
+            <label class="checkbox-label">
                 I have other pets at home
+                <input type="checkbox" name="has_other_pets" value="1" @checked(old('has_other_pets'))>
             </label>
 
             <label>
