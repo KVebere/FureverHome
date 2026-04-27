@@ -72,6 +72,7 @@ button {
     border: none;
     border-radius: 0.25rem;
     text-decoration: none;
+    font-size: 1.2rem;
     display: inline-block;
     cursor: pointer;
 }
@@ -113,10 +114,12 @@ nav li {
 .menu-button,
 #menuToggle {
     margin-left: auto;
+    font-size: 1.2rem;
 }
 
 .side-href {
     color: white;
+    font-size: 1.2rem;
 }
 
 .side-nav {
