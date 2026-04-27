@@ -17,7 +17,7 @@ class AdopterProfileRequest extends FormRequest
             'adopter_first_name' => 'required|string|max:50',
             'adopter_middle_name' => 'nullable|string|max:50',
             'adopter_last_name' => 'required|string|max:50',
-            'adopter_email' => 'required|email|max:150',
+            'adopter_email' => 'nullable|email|max:150',
             'adopter_phone' => 'required|string|max:15',
             'adopter_address_1' => 'required|string|max:50',
             'adopter_address_2' => 'nullable|string|max:50',

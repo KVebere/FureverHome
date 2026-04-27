@@ -43,6 +43,8 @@ class AdopterController extends Controller
         }
 
         $user = $request->user();
+        $data['adopter_email'] = $user->email;
+
         $user->adopter()->updateOrCreate(['user_id' => $user->id], $data);
 
         return redirect()->route('home');

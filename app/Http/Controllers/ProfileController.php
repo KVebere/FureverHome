@@ -31,6 +31,8 @@ class ProfileController extends Controller
 
         $data = $request->validated();
 
+        $data['adopter_email'] = $user->email;
+
         $data['has_children'] = $request->boolean('has_children');
         $data['has_cats'] = $request->boolean('has_cats');
         $data['has_dogs'] = $request->boolean('has_dogs');
