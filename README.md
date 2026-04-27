@@ -81,12 +81,12 @@ Ensure the following are installed:
     Or
     
 Start the frontend dev server:
-    ```bash
+    ```
     npm run dev
     ```
     
 And then in saparate terminal run:
-    ```bash
+    ```
     php artisan serve
     ```
 
