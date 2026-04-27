@@ -22,7 +22,7 @@
                     <input type="password" name="password" required>
                 </label>
 
-                <label>
+                <label class="checkbox-label">
                     <input type="checkbox" name="remember" value="1">
                     Remember me
                 </label>

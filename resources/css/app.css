@@ -297,6 +297,19 @@ nav li {
     font-size: 1.50rem;
 }
 
+.profile .checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.profile .checkbox-label input {
+    width: auto;
+    margin: 0;
+}
+
 .profile input,
 .profile select {
     padding: 0.4rem;
