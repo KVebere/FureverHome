@@ -195,5 +195,4 @@ return [
     */
 
     'attributes' => [],
-
 ];

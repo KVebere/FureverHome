@@ -46,6 +46,10 @@
                 <label>
                     First name
                     <input type="text" name="adopter_first_name" value="{{ old('adopter_first_name', $adopter->adopter_first_name ?? '') }}" required>
+
+                    @error('adopter_first_name')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
@@ -56,21 +60,37 @@
                 <label>
                     Last name
                     <input type="text" name="adopter_last_name" value="{{ old('adopter_last_name', $adopter->adopter_last_name ?? '') }}" required>
+
+                    @error('adopter_last_name')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
                     Email
                     <input type="email" name="adopter_email" value="{{ old('adopter_email', $adopter->adopter_email ?? '') }}" required>
+
+                    @error('adopter_email')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
                     Phone number
                     <input type="text" name="adopter_phone" value="{{ old('adopter_phone', $adopter->adopter_phone ?? '') }}" required>
+
+                    @error('adopter_phone')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
                     Address line 1
                     <input type="text" name="adopter_address_1" value="{{ old('adopter_address_1', $adopter->adopter_address_1 ?? '') }}" required>
+
+                    @error('adopter_address_1')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
@@ -81,11 +101,19 @@
                 <label>
                     City
                     <input type="text" name="adopter_city" value="{{ old('adopter_city', $adopter->adopter_city ?? '') }}" required>
+
+                    @error('adopter_city')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
                     Postcode
                     <input type="text" name="adopter_postcode" value="{{ old('adopter_postcode', $adopter->adopter_postcode ?? '') }}" required>
+
+                    @error('adopter_postcode')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
