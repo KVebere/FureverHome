@@ -10,11 +10,6 @@
                 @csrf
 
                 <label>
-                    Name
-                    <input type="text" name="name" value="{{ old('name') }}" required>
-                </label>
-
-                <label>
                     Email
                     <input type="email" name="email" value="{{ old('email') }}" required>
 
@@ -35,6 +30,10 @@
                 <label>
                     Confirm password
                     <input type="password" name="password_confirmation" required>
+
+                    @error('password_confirmation')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <button type="submit">Create account</button>
