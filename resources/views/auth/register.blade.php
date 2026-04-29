@@ -5,9 +5,6 @@
 
     <main>
         <section class="profile">
-            @if($errors->any())
-                <p>{{ $errors->first() }}</p>
-            @endif
 
             <form method="POST" action="{{ route('register') }}">
                 @csrf
@@ -20,11 +17,19 @@
                 <label>
                     Email
                     <input type="email" name="email" value="{{ old('email') }}" required>
+
+                    @error('email')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
                     Password
                     <input type="password" name="password" required>
+
+                    @error('password')
+                    <p class="error">{{ $message }}</p>
+                    @enderror
                 </label>
 
                 <label>
