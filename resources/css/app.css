@@ -394,3 +394,57 @@ nav li {
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
+
+/* Discover page */
+.discover-page {
+    padding: 0 1rem 5rem;
+}
+
+.discover-filters {
+    background: #f7f1e1;
+    border: 1px solid #d7c1a7;
+    box-shadow: 0 8px 18px rgba(100, 69, 54, 0.12);
+}
+
+.discover-filters form {
+    display: grid;
+    gap: 0.75rem;
+    max-width: 44rem;
+    margin: 0 auto;
+}
+
+.discover-filters label {
+    display: grid;
+    gap: 0.25rem;
+    font-size: 1rem;
+}
+
+.discover-filters select {
+    padding: 0.45rem;
+    border: 1px solid #c4a381;
+    border-radius: 0.4rem;
+    background: white;
+}
+
+.discover-filters .filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.discover-filter-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.discover-filter-actions a {
+    color: #644536;
+    font-weight: bold;
+}
+
+.discover-count {
+    font-size: 1rem;
+    font-weight: normal;
+}

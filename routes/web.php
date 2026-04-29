@@ -13,7 +13,11 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/match', [AnimalController::class, 'match'])->name('match');
 
-Route::get('/discover', fn () => view('discover'));
+Route::get('/discover', [AnimalController::class, 'discover'])
+    ->name('discover');
+
+Route::get('/animals/{animal}', [AnimalController::class, 'show'])
+    ->name('animals.show');
 
 Route::get('/animals/{animal}', [AnimalController::class, 'show'])
     ->name('animals.show');
