@@ -65,7 +65,38 @@ class AnimalImageSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+
+            // Lily
+            [
+                'animal_id' => $animals['Lily']->animal_id,
+                'image_path' => 'animals/lily_1.jpg',
+                'is_primary' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            // Rika
+            [
+                'animal_id' => $animals['Rika']->animal_id,
+                'image_path' => 'animals/rika_1.jpg',
+                'is_primary' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            // Kombo
+            [
+                'animal_id' => $animals['Detective Kombo']->animal_id,
+                'image_path' => 'animals/kombo_1.jpg',
+                'is_primary' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }
+
+
+
+
 
