@@ -19,9 +19,6 @@ Route::get('/discover', [AnimalController::class, 'discover'])
 Route::get('/animals/{animal}', [AnimalController::class, 'show'])
     ->name('animals.show');
 
-Route::get('/animals/{animal}', [AnimalController::class, 'show'])
-    ->name('animals.show');
-
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'showLogin'])
         ->name('login');
