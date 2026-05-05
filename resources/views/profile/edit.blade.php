@@ -164,28 +164,28 @@
                     </select>
                 </label>
 
-                <label>
+                <label class="checkbox-label">
+                    Has children
                     <input type="checkbox" name="has_children" value="1"
                         @checked(old('has_children', $adopter->has_children ?? false))>
-                    Has children
                 </label>
 
-                <label>
+                <label class="checkbox-label">
+                    Has dogs
                     <input type="checkbox" name="has_dogs" value="1"
                         @checked(old('has_dogs', $adopter->has_dogs ?? false))>
-                    Has dogs
                 </label>
 
-                <label>
+                <label class="checkbox-label">
+                    Has cats
                     <input type="checkbox" name="has_cats" value="1"
                         @checked(old('has_cats', $adopter->has_cats ?? false))>
-                    Has cats
                 </label>
 
-                <label>
+                <label class="checkbox-label">
+                    Has other pets
                     <input type="checkbox" name="has_other_pets" value="1"
                         @checked(old('has_other_pets', $adopter->has_other_pets ?? false))>
-                    Has other pets
                 </label>
 
                 <label>
