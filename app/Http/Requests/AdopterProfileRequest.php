@@ -18,7 +18,7 @@ class AdopterProfileRequest extends FormRequest
             'adopter_middle_name' => 'nullable|string|max:50',
             'adopter_last_name' => 'required|string|max:50',
             'adopter_email' => 'nullable|email|max:150',
-            'adopter_phone' => 'required|string|max:15',
+            'adopter_phone' => ['required', 'regex:/^[0-9]{10,15}$/'],
             'adopter_address_1' => 'required|string|max:50',
             'adopter_address_2' => 'nullable|string|max:50',
             'adopter_city' => 'required|string|max:30',
