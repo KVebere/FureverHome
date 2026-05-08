@@ -77,7 +77,7 @@
 
                 <label>
                     Phone number
-                    <input type="number" name="adopter_phone" value="{{ old('adopter_phone', $adopter->adopter_phone ?? '') }}" required>
+                    <input type="text" name="adopter_phone" value="{{ old('adopter_phone', $adopter->adopter_phone ?? '') }}" required>
 
                     @error('adopter_phone')
                     <p class="error">{{ $message }}</p>

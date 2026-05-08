@@ -23,9 +23,7 @@
 
         <a class = "side-href" href="/profile">Profile</a>
         <a class = "side-href" href="/savedMatches">Saved Matches</a>
-        <a class = "side-href" href="/settings">Settings</a>
     </aside>
-
 
     <?php echo $slot; ?>
 
