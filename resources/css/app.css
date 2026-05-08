@@ -159,6 +159,27 @@ nav li {
     pointer-events: auto;
 }
 
+.side-nav form {
+    margin: 0;
+}
+
+.side-nav button {
+    background: #644536;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: left;
+    width: fit-content;
+}
+
+.side-nav button:hover {
+    background: #7a5643;
+}
+
 /*Home Content*/
 .animal-grid {
     display: grid;

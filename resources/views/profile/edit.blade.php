@@ -67,15 +67,6 @@
                 </label>
 
                 <label>
-                    Email
-                    <input type="email" name="adopter_email" value="{{ old('adopter_email', $adopter->adopter_email ?? '') }}" required>
-
-                    @error('adopter_email')
-                    <p class="error">{{ $message }}</p>
-                    @enderror
-                </label>
-
-                <label>
                     Phone number
                     <input type="text" name="adopter_phone" value="{{ old('adopter_phone', $adopter->adopter_phone ?? '') }}" required>
 

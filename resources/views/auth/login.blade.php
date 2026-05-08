@@ -1,6 +1,6 @@
 <x-intro>
     <header>
-        <h1>Sign in</h1>
+        <h1>Log in</h1>
     </header>
 
     <main>
@@ -32,7 +32,7 @@
                     <input type="checkbox" name="remember" value="1">
                 </label>
 
-                <button type="submit">Sign in</button>
+                <button type="submit">Log in</button>
             </form>
 
             <p>

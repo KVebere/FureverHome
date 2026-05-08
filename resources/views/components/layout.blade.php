@@ -23,6 +23,10 @@
 
         <a class = "side-href" href="/profile">Profile</a>
         <a class = "side-href" href="/savedMatches">Saved Matches</a>
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit">Log out</button>
+        </form>
     </aside>
 
     <?php echo $slot; ?>
