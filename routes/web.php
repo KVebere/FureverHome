@@ -45,6 +45,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/saved-matches', [SavedMatchController::class, 'store'])
         ->name('saved-matches.store');
 
+    Route::post('/swipes', [SavedMatchController::class, 'store'])
+        ->middleware('auth')
+        ->name('swipes.store');
+
     Route::get('/profile', [ProfileController::class, 'edit']);
     Route::patch('/profile', [ProfileController::class, 'update']);
 });

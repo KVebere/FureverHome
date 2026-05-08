@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Animals;
 use App\Services\AdopterMatchService;
+use App\Models\SavedMatch;
 
 class AnimalController extends Controller
 {
@@ -60,15 +61,24 @@ class AnimalController extends Controller
 
     public function match()
     {
-        $animals = Animals::with('primaryImage')
-            ->where('animal_status', 'Available')
-            ->get();
+        $animalsQuery = Animals::with('primaryImage')
+            ->where('animal_status', 'Available');
 
         $adopter = $this->matchService->resolveAdopter();
+
         if ($adopter) {
+            $swipedAnimalIds = SavedMatch::where('adopter_id', $adopter->adopter_id)
+                ->pluck('animal_id');
+
+            $animals = $animalsQuery
+                ->whereNotIn('animal_id', $swipedAnimalIds)
+                ->get();
+
             $animals = $this->matchService->rankAnimals($animals, $adopter);
         } else {
-            $animals = $animals->sortByDesc('created_at')->values();
+            $animals = $animalsQuery
+                ->latest()
+                ->get();
         }
 
         return view('match', compact('animals'));

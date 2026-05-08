@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id('saved_matches_id');
             $table->unsignedBigInteger('adopter_id');
             $table->unsignedBigInteger('animal_id');
+
+            $table->enum('status', ['liked', 'discarded'])->default('liked');
+
             $table->timestamps();
 
             $table->foreign('adopter_id')
