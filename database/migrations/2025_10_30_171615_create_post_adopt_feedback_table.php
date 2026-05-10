@@ -7,9 +7,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('post_adopt_feedback', function (Blueprint $table) {
@@ -28,9 +25,6 @@ return new class extends Migration
         DB::statement('ALTER TABLE post_adopt_feedback ADD CONSTRAINT rating_check CHECK (satisfaction_rating >= 1 AND satisfaction_rating <= 5);');
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('post_adopt_feedback');

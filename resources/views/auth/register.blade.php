@@ -41,7 +41,7 @@
 
             <p>
                 Already have an account?
-                <a href="{{ route('login') }}">Sign in</a>
+                <a href="{{ route('login') }}">Log in</a>
             </p>
         </section>
     </main>
